@@ -16,6 +16,28 @@
     --muted: #888;
     --white: #F5F5F0;
   }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  /* Prevent horizontal overflow */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Make images scale down on mobile */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stack columns on mobile */
+@media (max-width: 768px) {
+  .your-grid-or-flex-container {
+    flex-direction: column;
+  }
+}
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
